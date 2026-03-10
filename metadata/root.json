@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "c574b7e8a45887e482aa260b475f557a9f78d9aab56f6c58f349355716a17884",
+   "sig": "306402301d9201b1cf5f8469120c3452066ec9d013a35aa363e315f537d83bc7f4462ee503b4dff44b17843a41563f74da1feb3c0230587cceeba38e8319386ad8169a27c2bce0e7065b319614e7b1e50e21b004e13e8b5bcc5a10bb744325aa358def1216b8"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-03-10T15:56:20Z",
+  "keys": {
+   "c574b7e8a45887e482aa260b475f557a9f78d9aab56f6c58f349355716a17884": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEsv6zVpqa9WtHbB8qLQ2jWoBvBBaI+9R+\nefC4/zUPVxpYfGmAVvA1Lo51PY5nMJYJ34YyTVsaxjsnXijwPQiqvEc88P8sdE36\nBKHOMuETtUkfa7BCB8Nqd8pbzEcyEGXf\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp384",
+    "x-tuf-on-ci-keyowner": "@nikosft"
+   },
+   "cbb3e60a71d97975203c563a060d1436a2829089925013a098dbfd5e82793af5": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/excid-io/tuf-on-ci-example/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "c574b7e8a45887e482aa260b475f557a9f78d9aab56f6c58f349355716a17884"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "cbb3e60a71d97975203c563a060d1436a2829089925013a098dbfd5e82793af5"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "c574b7e8a45887e482aa260b475f557a9f78d9aab56f6c58f349355716a17884"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "cbb3e60a71d97975203c563a060d1436a2829089925013a098dbfd5e82793af5"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
